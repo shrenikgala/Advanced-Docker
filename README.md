@@ -98,7 +98,7 @@ sudo docker-compose run redis_client</pre>
 
 * A commit will build a new docker image.
 * Push to local registery.
-* Deploy the dockerized [simple node.js App](https://github.com/CSC-DevOps/App) to blue or green slice.
+* Deploy the dockerized ![simple node.js App](https://github.com/CSC-DevOps/App) to blue or green slice.
 * Add appropriate hook commands to pull from registery, stop, and restart containers.
 
 Post-commit Hook which will build a new docker image and push to local registry
