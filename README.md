@@ -89,7 +89,9 @@ Command to run docker-compose.yml and to run the redis client after which you ca
 <pre>sudo docker-compose up -d
 sudo docker-compose run redis_client</pre>
 
+
 ![Image2](https://github.com/shrenikgala/DevOpsHW4/blob/master/ambassador.gif)
+
 
 
 3) **Docker Deploy**: Extend the deployment workshop to run a docker deployment process.
