@@ -85,10 +85,9 @@ redis_client:
    - 6379:6379
 </pre>
 
-Command to run docker-compose.yml and to run the redis client:
+Command to run docker-compose.yml and to run the redis client after which you can perform simple SET/GET requests:
 <pre>sudo docker-compose up -d
 sudo docker-compose run redis_client</pre>
-You can now perform simple SET/GET requests
 
 ![Image2](https://github.com/shrenikgala/DevOpsHW4/blob/master/ambassador.gif)
 
