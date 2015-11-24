@@ -2,9 +2,9 @@
 
 GIT_WORK_TREE=/home/shrenik/Deployment/deploy/green-www/ git checkout -f
 sudo docker pull localhost:5000/ncsu:latest  
-sudo docker stop greenapp  
-sudo docker rm greenapp
+sudo docker stop app2  
+sudo docker rm app2
 sudo docker rmi localhost:5000/ncsu:current  
 sudo docker tag -f localhost:5000/ncsu:latest localhost:5000/ncsu:current
-sudo docker run -p 7002:8080 -d --name greenapp localhost:5000/ncsu:latest 
+sudo docker run -p 50101:8080 -d --name app2 localhost:5000/ncsu:latest 
 ~                                                                          
