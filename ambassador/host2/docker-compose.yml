@@ -4,7 +4,7 @@ ambassador:
   expose:
    - "6379"
   environment:
-    - REDIS_PORT_6379_TCP=tcp://54.183.132.22:6379
+    - REDIS_PORT_6379_TCP=tcp://54.183.132.22:6379 //client and server are both ec2 instances
 
 redis_client:
   image: relateiq/redis-cli
