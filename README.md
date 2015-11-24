@@ -92,6 +92,7 @@ You can now perform simple SET/GET requests
 
 ![Image2](https://github.com/shrenikgala/DevOpsHW4/blob/master/ambassador.gif)
 
+
 3) **Docker Deploy**: Extend the deployment workshop to run a docker deployment process.
 
 * A commit will build a new docker image.
