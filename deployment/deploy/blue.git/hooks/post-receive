@@ -1,0 +1,9 @@
+#!/bin/sh
+
+GIT_WORK_TREE=/home/shrenik/Deployment/deploy/blue-www/ git checkout -f
+sudo docker pull localhost:5000/ncsu:latest  
+sudo docker stop blueapp 
+sudo docker rm blueapp
+sudo docker rmi localhost:5000/ncsu:current  
+sudo docker tag -f localhost:5000/ncsu:latest localhost:5000/ncsu:current
+sudo docker run -p 7001:8080 -d --name blueapp localhost:5000/ncsu:latest 
