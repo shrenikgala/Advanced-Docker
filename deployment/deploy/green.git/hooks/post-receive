@@ -7,4 +7,3 @@ sudo docker rm app2
 sudo docker rmi localhost:5000/ncsu:current  
 sudo docker tag -f localhost:5000/ncsu:latest localhost:5000/ncsu:current
 sudo docker run -p 50101:8080 -d --name app2 localhost:5000/ncsu:latest 
-~                                                                          
